@@ -1,0 +1,16 @@
+<ion-content [fullscreen]="true">
+
+  <ion-card color="dark">
+      <ion-card-content class="contenido">
+          <hr>Bienvenido
+      </ion-card-content>
+  </ion-card>
+
+  <ion-button class="botonDos" color="dark" [routerLink]="['/ingreso-agora']">Ingresar a Ágora</ion-button>
+  <ion-button class="botonDos" color="dark" [routerLink]="['/Agora']">Ágoras Creadas</ion-button>
+  <ion-button class="botonDos" color="dark" [routerLink]="['/historial']">Mi Historial</ion-button>
+  <ion-button class="botonDos" color="dark" [routerLink]="['/edicion']">Editar Ágora</ion-button>
+
+  <ion-button class="cerrarSesion" color="dark" (click)="salir()">Cerrar Sesion</ion-button>
+
+</ion-content>

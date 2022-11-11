@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>admin</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1>Hola Admin</h1>
+  <ion-card>
+    <ion-button class="botonDos" color="dark" [routerLink]="['/crear-usuario']">Ingresar usuario</ion-button>
+  </ion-card>
+
+  <ion-button class="cerrarSesion" color="dark" (click)="salir()">Cerrar Sesion</ion-button>
+</ion-content>

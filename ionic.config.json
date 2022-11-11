@@ -1,0 +1,7 @@
+{
+  "name": "TrabajoAgora",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-back-button></ion-back-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-input type="text" placeholder="Ingrese nombre" [(ngModel)]="nombre"></ion-input>
+    <ion-input type="text" placeholder="Ingrese numero" [(ngModel)]="nro"></ion-input>
+    <ion-button shape="block" (click)="guardar()">Guardar</ion-button>
+
+</ion-card>
+</ion-content>

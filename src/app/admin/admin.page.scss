@@ -1,0 +1,37 @@
+
+
+.cerrarSesion {
+    height: 10%;
+    width: 94%;
+    transform: translateY(20%) translateX(2%);
+}
+
+ion-header {
+    --ion-background-color: #000000;
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+.contenido {
+    transform: translateY(-8%);
+    font-size: 16px;
+    text-align: center;
+}
+
+ion-toolbar {
+    --background: transparent;
+    --ion-color-base: transparent !important;
+    --opacity: .8;
+}
+
+ion-content {
+    --overflow: hidden;
+    overflow: auto;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    --ion-background-color: #000000;
+}
+
+h1 {
+    text-align: center;
+}

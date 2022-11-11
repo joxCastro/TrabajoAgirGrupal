@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+      <ion-title class="letra">
+          Agora
+      </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+
+      <div class="titulo">Ingresar</div>
+
+      <ion-card-content>
+          <ion-item lines="full">
+              <ion-label position="floating" class="selecto">Email</ion-label>
+              <!-- Usamos ngModel para indicarle al input el objeto a utilizar-->
+              <ion-input class="letra" type="text" placeholder="Email" [(ngModel)]="usuario"></ion-input>
+          </ion-item>
+          <ion-item lines="full">
+              <!-- Usamos ngModel para indicarle al input el objeto a utilizar-->
+              <ion-label position="floating" class="selecto">Password</ion-label>
+              <ion-input class="letra" type="Password" placeholder="Contraseña" [(ngModel)]="password"></ion-input>
+          </ion-item>
+          <ion-row>
+              <ion-col class="boton">
+                  <!-- Indicamos mediante el (click) la funcion a quien referenciara-->
+                  <ion-button expand="full" color="dark" (click)="ingresar()">Ingresar</ion-button>
+              </ion-col>
+          </ion-row>
+      </ion-card-content>
+  </ion-card>
+
+
+
+
+</ion-content>
