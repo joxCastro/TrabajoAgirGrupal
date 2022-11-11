@@ -7,7 +7,7 @@
 <ion-content>
   <h1>Hola Admin</h1>
   <ion-card>
-    <ion-button class="botonDos" color="dark" [routerLink]="['/crear-usuario']">Ingresar usuario</ion-button>
+    <ion-button class="botonDos" color="dark" (click)="crearUsuario()">Ingresar usuario</ion-button>
   </ion-card>
 
   <ion-button class="cerrarSesion" color="dark" (click)="salir()">Cerrar Sesion</ion-button>

@@ -18,7 +18,7 @@ export class CrearUsuarioPage implements OnInit {
   }
 
   guardar(){
-    this.bdlocalservice.guardarContacto(this.nombre,this.nro);
+    this.bdlocalservice.crearContacto(this.nombre,this.nro,false);
   }
 
 }

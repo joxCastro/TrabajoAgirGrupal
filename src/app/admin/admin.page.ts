@@ -22,4 +22,8 @@ export class AdminPage implements OnInit {
     this.router.navigate(['/login']);
   }
 
+  crearUsuario(){
+    this.router.navigate(['/crear-usuario']);
+  }
+
 }

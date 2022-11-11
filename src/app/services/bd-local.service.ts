@@ -61,12 +61,12 @@ export class BdLocalService {
       toast.present();
     }
 
-    crearContacto(usuario: string,password: string){
+    crearContacto(usuario: string,password: string, estado: boolean){
       let um = false;
       const existe = this.usuario.find(c =>c.strUsuario===usuario);
 
       if(!existe){
-        //this.usuario.unshift({strUsuario: usuario, strPassword: password, bolEstado: estado})
+        this.usuario.unshift({strUsuario: usuario, strPassword: password, bolEstado: estado});
         this.storages.set('usuario',this.usuario);
         this.presentToast('Usuario no existe');
         console.log(this.usuario);
