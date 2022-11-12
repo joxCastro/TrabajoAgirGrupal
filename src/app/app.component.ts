@@ -13,7 +13,6 @@ export class AppComponent {
         usuario: '',
         password: '',
         estado: false,
-        tipoUsuario: ''
       };
 
       localStorage.setItem('persona', JSON.stringify(persona));
@@ -43,7 +42,6 @@ export class AppComponent {
       usuario: '',
       password: '',
       estado: false,
-      tipoUsuario: ''
     };
 
     localStorage.setItem('persona',JSON.stringify(persona));

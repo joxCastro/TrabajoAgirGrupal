@@ -9,7 +9,6 @@ import { Router } from '@angular/router';
 export class AdminPage implements OnInit {
 
   constructor(private router: Router) {
-    console.log('----');
   }
 
   ngOnInit() {
@@ -24,12 +23,6 @@ export class AdminPage implements OnInit {
 
   crearUsuario(){
     this.router.navigate(['/crear-usuario']);
-  }
-
-  borrarUsuarios(){
-
-    console.log(localStorage);
-    console.log('se debe eliminar lo que esta en el service, no el LocalStorage');
   }
 
 }

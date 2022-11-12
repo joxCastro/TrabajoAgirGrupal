@@ -31,17 +31,23 @@ export class LoginPage implements OnInit {
       persona.password = this.password;
       localStorage.setItem('persona',JSON.stringify(persona));
 
-      if (persona.usuario === 'admin') {
-        console.log('1.1');
+      const ingresoUsuario = persona.usuario.substr(-10);
+      const ingresoProfesor = persona.usuario.substr(-17);
+      const ingresoAdmin = persona.usuario.substr(-9);
+      console.log(ingresoUsuario + '    ' + ingresoProfesor + '    ' + ingresoAdmin);
+
+      if (ingresoAdmin === '@agir.com') {
         this.router.navigate(['/admin']);
       }
-      if (persona.usuario === 'profesor') {
+      if (ingresoProfesor === '@profesor.duoc.cl') {
         this.router.navigate(['/profesor']);
-        console.log('2.1');
       }
-      if(persona.usuario === 'usuario') {
+      if(ingresoUsuario === '@duocuc.cl') {
         this.router.navigate(['/home']);
-        console.log('3.1');
+      }
+
+      if (persona.usuario === 'admin') {
+        this.router.navigate(['/admin']);
       }
     }
   }

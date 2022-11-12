@@ -10,7 +10,6 @@ export class CrearUsuarioPage implements OnInit {
 
   nombre: string;
   nro: string;
-  tipoUsuario: string;
 
   constructor(public bdlocalservice: BdLocalService) {}
 

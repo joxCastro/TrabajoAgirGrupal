@@ -20,22 +20,19 @@ export class PruebaHoraGuard implements CanActivate {
     // Esto sería en caso de que no queremos que
     // pueda entrar a la página después de las 10:00 pm
     const asd = persona.estado;
-    console.log(asd);
-
-    console.log(localStorage.persona);
+    const ingresoUsuario = persona.usuario.substr(-10);
+    const ingresoProfesor = persona.usuario.substr(-17);
+    const ingresoAdmin = persona.usuario.substr(-9);
 
     if (asd === true){
-      if (persona.usuario === 'admin') {
-        console.log('1');
+      if (ingresoAdmin === '@agir.com') {
         this.router.navigate(['/admin']);
       }
-      if (persona.usuario === 'profesor') {
+      if (ingresoProfesor === '@profesor.duoc.cl') {
         this.router.navigate(['/profesor']);
-        console.log('2');
       }
-      if(persona.usuario === 'usuario') {
+      if(ingresoUsuario === '@duocuc.cl') {
         this.router.navigate(['/home']);
-        console.log('3');
       }
     }
 

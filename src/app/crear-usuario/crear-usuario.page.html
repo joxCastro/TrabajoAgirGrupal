@@ -10,14 +10,6 @@
   <ion-card>
     <ion-input type="text" placeholder="Ingrese nombre" [(ngModel)]="nombre"></ion-input>
     <ion-input type="text" placeholder="Ingrese numero" [(ngModel)]="nro"></ion-input>
-    <ion-list>
-      <ion-item>
-        <ion-select placeholder="Select fruit" [(ngModel)]="tipoUsuario">
-          <ion-select-option value="usuario">Alumno</ion-select-option>
-          <ion-select-option value="profesor">Profesor</ion-select-option>
-        </ion-select>
-      </ion-item>
-    </ion-list>
     <ion-button shape="block" (click)="guardar()">Guardar</ion-button>
 
 </ion-card>
