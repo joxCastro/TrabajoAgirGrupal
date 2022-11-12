@@ -7,6 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent {
   constructor() {
+
+    if (localStorage.getItem('persona') == null) {
+      const persona = {
+        usuario: '',
+        password: '',
+        estado: false,
+        tipoUsuario: ''
+      };
+
+      localStorage.setItem('persona', JSON.stringify(persona));
+    }
+
     console.log(localStorage.getItem('persona'));
     if (localStorage.getItem('persona.estado')) {
       this.grabarLocalStorage();
@@ -30,7 +42,8 @@ export class AppComponent {
     const persona = {
       usuario: '',
       password: '',
-      estado: false
+      estado: false,
+      tipoUsuario: ''
     };
 
     localStorage.setItem('persona',JSON.stringify(persona));

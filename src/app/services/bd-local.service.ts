@@ -78,5 +78,12 @@ export class BdLocalService {
       return um;
     }
 
+    borrarContactos(usuario: string){
+      const existe = this.usuario.find(c =>c.strUsuario===usuario);
+      //if (!existe) {
+      //  this.usuario.
+      //}
+    }
+
 
 }

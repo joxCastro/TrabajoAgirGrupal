@@ -10,12 +10,11 @@ export class CrearUsuarioPage implements OnInit {
 
   nombre: string;
   nro: string;
+  tipoUsuario: string;
 
   constructor(public bdlocalservice: BdLocalService) {}
 
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
-  }
+  ngOnInit(){}
 
   guardar(){
     this.bdlocalservice.crearContacto(this.nombre,this.nro,false);

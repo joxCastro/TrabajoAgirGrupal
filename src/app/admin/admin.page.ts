@@ -26,4 +26,10 @@ export class AdminPage implements OnInit {
     this.router.navigate(['/crear-usuario']);
   }
 
+  borrarUsuarios(){
+
+    console.log(localStorage);
+    console.log('se debe eliminar lo que esta en el service, no el LocalStorage');
+  }
+
 }
