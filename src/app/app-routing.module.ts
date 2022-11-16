@@ -30,7 +30,11 @@ const routes: Routes = [
   {
     path: 'crear-usuario',
     loadChildren: () => import('./crear-usuario/crear-usuario.module').then( m => m.CrearUsuarioPageModule)
+  },  {
+    path: 'profesor-crear-agora',
+    loadChildren: () => import('./profesor-crear-agora/profesor-crear-agora.module').then( m => m.ProfesorCrearAgoraPageModule)
   },
+
 ];
 
 @NgModule({

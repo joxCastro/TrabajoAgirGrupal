@@ -10,7 +10,7 @@ export class ProfesorPage implements OnInit {
 
   constructor(private router: Router) { }
 
-  ngOnInit() {
+  ngOnInit(){
   }
 
   salir(){

@@ -9,9 +9,11 @@ import { Router } from '@angular/router';
 export class AdminPage implements OnInit {
 
   constructor(private router: Router) {
+    console.log('parte1');
   }
 
   ngOnInit() {
+    console.log('parte2');
   }
 
   salir(){

@@ -10,7 +10,7 @@ export class CHomeComponent implements OnInit {
 
   constructor(private router: Router) { }
 
-  ngOnInit() {}//es para el local storage
+  ngOnInit() {}
 
   salir(){
     const persona = JSON.parse(localStorage.getItem('persona'));
