@@ -10,6 +10,7 @@ export class ProfesorCrearAgoraPage implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log('2');
   }
 
 }

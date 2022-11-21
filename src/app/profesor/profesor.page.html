@@ -13,7 +13,7 @@
   </ion-card>
 
   <ion-button class="botonDos" color="dark" [routerLink]="['/ingreso-agora']">Historial</ion-button>
-  <ion-button class="botonDos" color="dark" [routerLink]="['/profesor-crear-agora']">Crar Agora</ion-button>
+  <ion-button class="botonDos" color="dark" (click)="crearQR()">Crar Agora</ion-button>
 
   <ion-button class="cerrarSesion" color="dark" (click)="salir()">Cerrar Sesion</ion-button>
 </ion-content>
