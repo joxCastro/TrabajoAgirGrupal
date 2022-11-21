@@ -7,12 +7,14 @@ import { IonicModule } from '@ionic/angular';
 import { ProfesorCrearAgoraPageRoutingModule } from './profesor-crear-agora-routing.module';
 
 import { ProfesorCrearAgoraPage } from './profesor-crear-agora.page';
+import { NgxQRCodeModule } from '@techiediaries/ngx-qrcode';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
+    NgxQRCodeModule,
     ProfesorCrearAgoraPageRoutingModule
   ],
   declarations: [ProfesorCrearAgoraPage]

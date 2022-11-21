@@ -7,12 +7,16 @@ import { IonicModule, IonicRouteStrategy, IonRippleEffect } from '@ionic/angular
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { IonicStorageModule } from '@ionic/storage-angular';
+import { QRScanner } from '@ionic-native/qr-scanner';
+import { NgxQRCodeModule } from '@techiediaries/ngx-qrcode';
+
 
 
 
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule,
+    NgxQRCodeModule,
     IonicModule.forRoot({
       rippleEffect: true,
       mode: 'md',

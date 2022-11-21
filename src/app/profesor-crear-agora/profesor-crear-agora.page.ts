@@ -7,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfesorCrearAgoraPage implements OnInit {
 
+  title = 'app';
+  elementType = 'url';
+  value = 'CHUPALA';
+
   constructor() { }
 
   ngOnInit() {
     console.log('2');
   }
+
 
 }
