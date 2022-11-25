@@ -9,12 +9,11 @@ export class ProfesorCrearAgoraPage implements OnInit {
 
   title = 'app';
   elementType = 'url';
-  value = 'CHUPALA';
+  value = 'qrfy.com/p/LeTKSg7';
 
   constructor() { }
 
   ngOnInit() {
-    console.log('2');
   }
 
 

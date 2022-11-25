@@ -22,7 +22,6 @@ export class ProfesorPage implements OnInit {
 
   crearQR(){
     this.router.navigate(['/profesor-crear-agora']);
-    console.log(1);
   }
 
 }
