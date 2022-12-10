@@ -17,8 +17,8 @@ describe('CrearUsuarioPage', () => {
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));
-
-  it('should create', () => {
+ 
+  it('CREAR CONTATCO CON EXITO', () => {
     expect(component).toBeTruthy();
   });
 });

@@ -18,7 +18,7 @@ describe('HomePage', () => {
     fixture.detectChanges();
   }));
 
-  it('should create', () => {
+  it('Home funcional', () => {
     expect(component).toBeTruthy();
   });
 });

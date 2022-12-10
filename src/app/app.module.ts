@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
 
-import { IonicModule, IonicRouteStrategy, IonRippleEffect } from '@ionic/angular';
+import { IonicModule, IonicRouteStrategy, IonRippleEffect, isPlatform } from '@ionic/angular';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -18,8 +18,8 @@ import { NgxQRCodeModule } from '@techiediaries/ngx-qrcode';
   imports: [BrowserModule,
     NgxQRCodeModule,
     IonicModule.forRoot({
-      rippleEffect: true,
-      mode: 'md',
+      swipeBackEnabled: false,
+      animated: !isPlatform('android')
     }),
     AppRoutingModule,
     IonicStorageModule.forRoot()],

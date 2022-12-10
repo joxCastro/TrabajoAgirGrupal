@@ -18,7 +18,7 @@ describe('AdminPage', () => {
     fixture.detectChanges();
   }));
 
-  it('should create', () => {
+  it('Vista Admin', () => {
     expect(component).toBeTruthy();
   });
 });

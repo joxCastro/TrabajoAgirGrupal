@@ -18,7 +18,7 @@ describe('ProfesorPage', () => {
     fixture.detectChanges();
   }));
 
-  it('should create', () => {
+  it('Vista profesor', () => {
     expect(component).toBeTruthy();
   });
 });
